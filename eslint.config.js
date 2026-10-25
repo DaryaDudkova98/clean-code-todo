@@ -13,4 +13,10 @@ module.exports = [
       "no-console": "warn",
     },
   },
+  {
+    files: ["eslint.config.js"],
+    languageOptions: {
+      globals: { ...globals.node },
+    },
+  },
 ];
