@@ -1,5 +1,5 @@
-const js = require("@eslint/js");
-const globals = require("globals");
+const js = require('@eslint/js');
+const globals = require('globals');
 
 module.exports = [
   js.configs.recommended,
@@ -8,13 +8,13 @@ module.exports = [
       globals: { ...globals.browser },
     },
     rules: {
-      "no-var": "error",
-      "prefer-const": "error",
-      "no-console": "warn",
+      'no-var': 'error',
+      'prefer-const': 'error',
+      'no-console': 'warn',
     },
   },
   {
-    files: ["eslint.config.js"],
+    files: ['eslint.config.js'],
     languageOptions: {
       globals: { ...globals.node },
     },
