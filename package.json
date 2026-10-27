@@ -11,11 +11,11 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
-      "prettier --write"
+      "eslint",
+      "prettier --check"
     ],
     "*.{json,css,html,md}": [
-      "prettier --write"
+      "prettier --check"
     ]
   },
   "repository": {
